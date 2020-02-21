@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { checkPropTypes } from 'prop-types';
 
-const MemberForm = eprops => {
+const MemberForm = props => {
     const [member, setMember] = useState({name: '', email: '', role: ''});
 
     const handleChanges = event => {
@@ -11,12 +10,12 @@ const MemberForm = eprops => {
 
     const submitForm = event => {
         event.preventDefault();
-        checkPropTypes.addNewMember(member);
+        props.addNewMember(member);
         setMember({name: '', email: '', role: ''});
     };
 
     return (
-        <form onSubmit={submitProfile}>
+        <form onSubmit={submitForm}>
             <label htmlFor='name'>Name Here</label>
             <input 
                 type='text'

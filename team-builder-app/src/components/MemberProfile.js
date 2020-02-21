@@ -1,7 +1,6 @@
 import React from 'react';
-import MemberProfile from './MemberForm';
 
-const memberProfile = props => {
+const MemberProfile = props => {
     return (
         <div className='member-profile'>
             {props.members.map(member => (

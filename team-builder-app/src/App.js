@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import { useState } from './components/MemberForm';
-import MemberForm from './components'
+import { useState } from 'react';
+import MemberForm from './components/MemberForm';
 import MemberProfile from './components/MemberProfile';
 
 function App() {

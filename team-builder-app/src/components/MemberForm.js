@@ -16,19 +16,19 @@ const MemberForm = props => {
 
     return (
         <form onSubmit={submitForm}>
-            <label htmlFor='name'>Name Here</label>
+            <label htmlFor='name'>Name: </label>
             <input 
                 type='text'
                 id='name'
                 name='name'
                 value={member.name}
-                placeHolder='Type Name Here'
+                placeHolder='Enter your Name'
                 onChange={handleChanges}
             />
 
-            <label htmlFor='email'>Enter Email</label>
+            <label htmlFor='email'>Email: </label>
             <input 
-                type='email'
+                type='text'
                 id='email'
                 name='email'
                 value={member.email}
@@ -38,13 +38,13 @@ const MemberForm = props => {
 
             <select name='team-roles' id='role'>
                 <option value=''>Choose your role</option>
-                <option value='Leader'>Leader</option>
-                <option value='Support'>Support</option>
-                <option value='Defensive'>Defensive</option>
+                <option value='Student'>Student</option>
+                <option value='Photographer'>Photographer</option>
+                <option value='Ball Catcher'>Ball Catcher</option>
             </select>
 
             <button type='submit' value='Click to Submit'>
-                Submit Form
+                Join the Team
             </button>
         </form>
     );
